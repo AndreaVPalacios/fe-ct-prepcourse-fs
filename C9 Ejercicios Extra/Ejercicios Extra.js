@@ -6,7 +6,11 @@ function deObjetoAarray(objeto) {
   // Estos elementos debe ser cada par clave:valor del objeto recibido.
   // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
   // Tu código:
+
+  objeto = { 1: "a", 2: "b", 3: "c"};
+  console.log(Object.entries(objeto));
 }
+deObjetoAarray();
 
 function numberOfCharacters(string) {
   // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las
@@ -14,7 +18,22 @@ function numberOfCharacters(string) {
   // Las letras deben estar en orden alfabético.
   // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
   // Tu código:
+
+  var contadorLetras = 0;
+  var unicasLetras = {1: "a", 1: "b", 1: "c", 1: "d", 1: "e"};
+
+  string = [];
+  
+  for ( var i = 0; i < string.length; i++ ){
+    if (string[i + 1] === string[i]){
+      contadorLetras++
+    }else{
+      unicasLetras.push(string[i]);
+    }
+  }
+  console.log(unicasLetras);
 }
+numberOfCharacters("aadddececece");
 
 function capToFront(string) {
   // Recibes un string con algunas letras en mayúscula y otras en minúscula.
@@ -22,6 +41,8 @@ function capToFront(string) {
   // Retornar el string.
   // [EJEMPLO]: soyHENRY ---> HENRYsoy
   // Tu código:
+
+
 }
 
 function asAmirror(frase) {
@@ -29,7 +50,16 @@ function asAmirror(frase) {
   // La diferencia es que cada palabra estará escrita al inverso.
   // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
   // Tu código:
+  
+  frase = "The Henry Challenge is close!";
+
+  var fraseSeparada = frase.split("");
+  var invertirFrase = fraseSeparada.reverse();
+  var unirfrase = invertirFrase.join("");
+  console.log(unirfrase);
+
 }
+asAmirror();
 
 function capicua(numero) {
   // Si el número que recibes es capicúa debes retornar el string: "Es capicua".

@@ -5,6 +5,13 @@ function conection(status) {
   // De lo contrario, presumimos que el usuario está "Offline".
   // Retornar el estado de conexión del usuario.
   // Tu código:
+  if (status == 1){
+    console.log("Online");
+  } else if (status == 2){
+    console.log("Away")
+  } else {
+    console.log("Offline");
+  }
 }
-
+conection(9)
 module.exports = conection;

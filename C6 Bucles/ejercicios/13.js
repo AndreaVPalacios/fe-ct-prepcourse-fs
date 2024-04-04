@@ -5,6 +5,8 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  if ( num % 1 === 0 && num ++ && num --) console.log(true);
+  else console.log(false);
 }
-
+esEntero(0.70)
 module.exports = esEntero;

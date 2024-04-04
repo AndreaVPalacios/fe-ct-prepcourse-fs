@@ -4,5 +4,4 @@ function contarParesConContinue(numeros) {
   // Evita los impares utilizando continue.
   // Tu código:
 }
-
 module.exports = contarParesConContinue;
